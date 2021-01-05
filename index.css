@@ -1,0 +1,305 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  min-width: 1200px;
+}
+.content-box {
+  width: 100%;
+  min-height: 100%;
+  overflow: auto;
+  background-color: #ebedf5;
+  padding: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  width: 100%;
+  min-height: 40%;
+  padding: 30px;
+  padding-top: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+.content-top {
+  margin-bottom: 32px;
+}
+.content-bottom {
+}
+/* 内容区标题 */
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.left {
+  flex: 1;
+  font-size: 30px;
+  color: #22252b;
+  position: relative;
+  padding: 12px;
+}
+.title-image {
+  height: 16px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  bottom: 16px;
+}
+.spot-image {
+  width: 200px;
+  height: auto;
+}
+
+/* 最佳实践 */
+.practice-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.practice-head {
+  width: 86%;
+  height: 90px;
+  background-image: url(./images/longArrow.png);
+  background-position: 10%;
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.practice-head .btn {
+  width: 258px;
+  margin-right: 22px;
+}
+.practice-content {
+  width: 100%;
+  padding-left: 70px;
+  position: relative;
+}
+.practice-content > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.dashedArrow {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  display: inline-block;
+  width: 70px;
+  height: 88px;
+  background-image: url(./images/dashedArrow.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.dashedArrow.dashedArrow2 {
+  top: 130px;
+}
+/* 虚线箭头 */
+.practice-middle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: #8eb2ff;
+}
+.practice-middle hr {
+  flex: 1;
+  color: #afc8ff;
+  border-style: dotted;
+}
+.practice-content .btn {
+  width: 394px;
+}
+
+/* 脚本/模版样例 */
+.template-main {
+  width: 100%;
+  height: 90px;
+  background: #5c87fc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+.template-main > div {
+  flex: 1;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: solid 1px;
+  border-image: linear-gradient(#5c87fc, #adb9f1, #5c87fc) 1 10 1;
+}
+.template-main > div:hover {
+  opacity: 0.8;
+}
+.template-main > div:last-child {
+  border: none;
+}
+
+/* 支撑平台 */
+.platform-main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.platform {
+  height: 450px;
+  width: 342px;
+  background: #5c87fc;
+  border-radius: 12px;
+  padding: 30px 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.platform span {
+  color: #555b66;
+}
+.platform span:first-child {
+  flex: 1;
+  text-align: center;
+}
+.platform img {
+  min-width: 100px;
+  width: 60%;
+  height: auto;
+}
+.platform > div {
+  margin-bottom: 24px;
+}
+.platform > div:last-child {
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+  margin-top: 12px;
+  font-size: 24px;
+  color: #eef2ff;
+}
+.platform-middle {
+  flex: 1;
+  padding: 0 32px;
+}
+.platform-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.platform-btns {
+  width: 60%;
+  height: 170px;
+  padding: 42px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: #5c87fc;
+  border-radius: 12px;
+  font-size: 24px;
+  color: #eef2ff;
+}
+
+.platform-text {
+  flex-shrink: 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.platform-btns .btn {
+  width: 170px;
+}
+.platform-btns .btn a {
+  height: 100%;
+}
+.platform-btns .btn a img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+.platform-top > img {
+  height: 102px;
+  width: auto;
+}
+.platform-topArrow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.platform-topArrow img {
+  width: 102px;
+  height: auto;
+}
+.platform-bottom {
+  width: 100%;
+  height: 150px;
+  background-image: url(./images/middleArrow.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.platform-images {
+  width: 84%;
+  height: 90px;
+  padding: 0 34px;
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.platform-images img {
+  flex: 1;
+  max-height: 100%;
+  max-width: 100px;
+}
+.platform-right img {
+  width: 100%;
+}
+
+/* 按钮通用 */
+.btn {
+  height: 62px;
+  min-width: 100px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px 0 #e4e3e3;
+  border-radius: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  background-image: linear-gradient(270deg, #fab945 0%, #e37c49 97%);
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn.blue {
+  box-shadow: 0 4px 21px 0 rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(270deg, #2aacff 0%, #265cff 100%);
+}
+.btn.white {
+  height: 90px;
+  box-shadow: none;
+  background: #ffffff;
+  border-radius: 12px;
+}
+.btn.white.big {
+  height: 326px;
+}
+/* a 通用样式 */
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #ffffff;
+}
