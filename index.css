@@ -264,6 +264,7 @@
 }
 .platform-right .btn.white {
   flex: 1;
+  opacity: 1 !important;
 }
 .platform-rBtns {
   width: 234px;
@@ -275,6 +276,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.platform-rBtns a:hover {
+  opacity: 0.8;
 }
 .platform-rBtns .platform-rBtn1 {
   height: 50%;
