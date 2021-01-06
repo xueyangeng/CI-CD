@@ -25,8 +25,6 @@
 .content-top {
   margin-bottom: 32px;
 }
-.content-bottom {
-}
 /* 内容区标题 */
 .title {
   display: flex;
@@ -87,6 +85,10 @@
   justify-content: space-between;
   margin-bottom: 30px;
 }
+.practice-content > div .btn {
+  width: 394px;
+}
+/* 虚线扇形箭头 */
 .dashedArrow {
   position: absolute;
   top: 28px;
@@ -113,9 +115,6 @@
   color: #afc8ff;
   border-style: dotted;
 }
-.practice-content .btn {
-  width: 394px;
-}
 
 /* 脚本/模版样例 */
 .template-main {
@@ -126,7 +125,7 @@
   display: flex;
   align-items: center;
 }
-.template-main > div {
+.template-main > a {
   flex: 1;
   height: 80%;
   display: flex;
@@ -135,10 +134,10 @@
   border-right: solid 1px;
   border-image: linear-gradient(#5c87fc, #adb9f1, #5c87fc) 1 10 1;
 }
-.template-main > div:hover {
+.template-main > a:hover {
   opacity: 0.8;
 }
-.template-main > div:last-child {
+.template-main > a:last-child {
   border: none;
 }
 
@@ -160,30 +159,26 @@
   align-items: center;
   justify-content: center;
 }
-.platform span {
+.platform > a {
+  margin-bottom: 24px;
   color: #555b66;
 }
-.platform span:first-child {
+.platform a span:first-child {
   flex: 1;
   text-align: center;
 }
-.platform img {
+.platform a span img {
   min-width: 100px;
   width: 60%;
   height: auto;
 }
-.platform > div {
-  margin-bottom: 24px;
-}
-.platform > div:last-child {
-  margin-bottom: 0;
+.platform .platform-text {
   width: 100%;
+  padding: 0;
   text-align: center;
-  line-height: 2;
   margin-top: 12px;
-  font-size: 24px;
-  color: #eef2ff;
 }
+
 .platform-middle {
   flex: 1;
   padding: 0 32px;
@@ -198,30 +193,23 @@
   height: 170px;
   padding: 42px 40px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background: #5c87fc;
   border-radius: 12px;
-  font-size: 24px;
-  color: #eef2ff;
 }
 
 .platform-text {
   flex-shrink: 0;
   padding: 0 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 24px;
+  color: #eef2ff;
 }
 .platform-btns .btn {
   width: 170px;
 }
-.platform-btns .btn a {
+.platform-btns .btn {
   height: 100%;
-}
-.platform-btns .btn a img {
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
 }
 .platform-top > img {
   height: 102px;
@@ -261,9 +249,6 @@
   max-height: 100%;
   max-width: 100px;
 }
-.platform-right img {
-  width: 100%;
-}
 
 /* 按钮通用 */
 .btn {
@@ -282,6 +267,10 @@
 .btn:hover {
   opacity: 0.8;
 }
+.btn img {
+  width: 100%;
+  height: auto;
+}
 .btn.blue {
   box-shadow: 0 4px 21px 0 rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(270deg, #2aacff 0%, #265cff 100%);
@@ -297,9 +286,6 @@
 }
 /* a 通用样式 */
 a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 24px;
   color: #ffffff;
 }
