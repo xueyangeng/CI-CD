@@ -159,12 +159,6 @@
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1380px) {
-  .platform {
-    width: 380px;
-    padding: 10px;
-  }
-}
 .platform .platform-text {
   width: 100%;
   padding: 0;
@@ -189,11 +183,6 @@
   flex: 1;
   padding: 0 32px;
 }
-@media screen and (max-width: 1380px) {
-  .platform-middle {
-    padding: 0 10px;
-  }
-}
 .platform-top {
   display: flex;
   align-items: center;
@@ -208,11 +197,6 @@
   justify-content: space-between;
   background: #5c87fc;
   border-radius: 12px;
-}
-@media screen and (max-width: 1380px) {
-  .platform-tBtns {
-    padding: 10px;
-  }
 }
 .platform-tBtns .btn {
   width: 170px;
@@ -358,4 +342,17 @@
 a {
   font-size: 24px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 1380px) {
+  .platform {
+    width: 380px;
+    padding: 10px;
+  }
+  .platform-middle {
+    padding: 0 10px;
+  }
+  .platform-tBtns {
+    padding: 10px;
+  }
 }
