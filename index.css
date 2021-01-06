@@ -159,18 +159,11 @@
   align-items: center;
   justify-content: center;
 }
-.platform > a {
-  margin-bottom: 24px;
-  color: #555b66;
-}
-.platform a span:first-child {
-  flex: 1;
-  text-align: center;
-}
-.platform a span img {
-  min-width: 100px;
-  width: 60%;
-  height: auto;
+@media screen and (max-width: 1380px) {
+  .platform {
+    width: 380px;
+    padding: 10px;
+  }
 }
 .platform .platform-text {
   width: 100%;
@@ -178,17 +171,35 @@
   text-align: center;
   margin-top: 12px;
 }
+.platform-left > a {
+  margin-bottom: 24px;
+  color: #555b66;
+}
+.platform-left a span:first-child {
+  flex: 1;
+  text-align: center;
+}
+.platform-left a span img {
+  min-width: 100px;
+  width: 60%;
+  height: auto;
+}
 
 .platform-middle {
   flex: 1;
   padding: 0 32px;
+}
+@media screen and (max-width: 1380px) {
+  .platform-middle {
+    padding: 0 10px;
+  }
 }
 .platform-top {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.platform-btns {
+.platform-tBtns {
   width: 60%;
   height: 170px;
   padding: 42px 40px;
@@ -198,18 +209,20 @@
   background: #5c87fc;
   border-radius: 12px;
 }
-
+@media screen and (max-width: 1380px) {
+  .platform-tBtns {
+    padding: 10px;
+  }
+}
+.platform-tBtns .btn {
+  width: 170px;
+  height: 100%;
+}
 .platform-text {
   flex-shrink: 0;
   padding: 0 10px;
   font-size: 24px;
   color: #eef2ff;
-}
-.platform-btns .btn {
-  width: 170px;
-}
-.platform-btns .btn {
-  height: 100%;
 }
 .platform-top > img {
   height: 102px;
@@ -248,6 +261,59 @@
   flex: 1;
   max-height: 100%;
   max-width: 100px;
+}
+.platform-right .btn.white {
+  flex: 1;
+}
+.platform-rBtns {
+  width: 234px;
+  height: 205px;
+  background-color: #dfeaf5;
+}
+.platform-rBtns > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.platform-rBtns .platform-rBtn1 {
+  height: 50%;
+}
+.platform-rBtns .platform-arrows {
+  height: 30%;
+}
+.platform-rBtns .platform-rBtn2 {
+  height: 20%;
+}
+.platform-rBtns .platform-rBtn1 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.platform-rBtns .platform-rBtn1 a img {
+  width: 64%;
+  margin-bottom: 6px;
+}
+.platform-rBtns .platform-rBtn1 a img:last-child {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.platform-rBtns .platform-arrows img {
+  width: 22%;
+  height: 100%;
+  margin-right: 10%;
+}
+.platform-rBtns .platform-arrows img:last-child {
+  margin-right: 0;
+}
+.platform-rBtns .platform-rBtn2 a {
+  width: 50%;
+  text-align: center;
+}
+.platform-rBtns .platform-rBtn2 a img {
+  width: 80%;
+  max-height: 100%;
 }
 
 /* 按钮通用 */
